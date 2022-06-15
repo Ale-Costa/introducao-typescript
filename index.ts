@@ -1,5 +1,16 @@
-function adicionaApendiceALista<T>(array: any[], valor: T){
-    return array.map(() => valor);
+interface IUsuario{
+    id: string;
+    email: string;
 }
 
-adicionaApendiceALista([1,2,3],1);
+interface IAdmin extends IUsuario{
+    cargo: 'gerente' | 'coordenador' | 'supervisor';
+}
+
+function redirecione(usuario: IUsuario | IAdmin){
+    if('cargo' in usuario){
+        //redireciona para area de admin
+    }
+
+        //redireciona para a area de usuario
+}
