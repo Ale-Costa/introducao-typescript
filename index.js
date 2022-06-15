@@ -1,4 +1,4 @@
-function soma(a, b) {
-    return a + b;
-}
-soma(5, 7);
+"use strict";
+exports.__esModule = true;
+exports.numero = void 0;
+exports.numero = 2;
